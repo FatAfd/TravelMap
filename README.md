@@ -1,30 +1,25 @@
-# Projet de GLA
-Version 2024
+# Project TravelMap
 
 ## Description
-Ceci est l'archetype de projet de Génie Logiciel Avancé (GLA).
 
-Il s'agit d'un projet Java. Ce dépôt définit un système de build et une application simple. Il est nécéssaire de consulter le fichier [CONTRIBUTING.md](CONTRIBUTING.md) pour utiliser ce dépôt.
+Design of Maps-type software. This software was implemented in Java, and can be used to read a transport map, then, by giving the GPS coordinates of departure and arrival, it calculates the shortest route (in time and distance) to make this journey using the Dijkstra algorithm. We used a graph structure to retrieve and store each stop on the Paris network and apply Dijkstra's algorithm to determine the shortest route.
 
-## Lancement du programme
-Ce projet utilise [maven](https://maven.apache.org/) de Apache pour la gestion de construction.
+## Launch of the programme
+This project uses [maven](https://maven.apache.org/) for construction management.
 
-Afin de compiler et lancer les tests, éxecutez simplement
-```
-mvn verify
-```
+ATo compile and run the tests, simply run ```mvn verify ``` 
 
-Dans sa version initiale, le programme fournit est un simple code qui se lance en terminal ou en application graphique.
+In its initial version, the program provided is simple code that runs in a terminal or graphical application. 
 
-Une fois le programme compilé, vous trouverez un jar executable dans le dossier target. Au nom de jar près (version changeante), vous pourrez l'exécuter avec:
-```
-java -jar project-2024.1.0.0-SNAPSHOT-jar-with-dependencies
-```
-L'option de lancement `--info` causera l'affichage dans la console d'informations de l'application.
+Once the programme has been compiled, you will find an executable jar in the target folder. With the correct jar name (changing version), you can run it with: ``` java -jar project-2024.1.0.0-SNAPSHOT-jar-with-dependencies ``` 
 
-L'option de lancement `--term` causera le lancement de lapplication dans le terminal.
+The `--info` launch option will cause information about the application to be displayed in the console. 
 
-L'option de lancement `--gui` causera le lancement de l'interface graphique.
+The `--term` launch option will cause the application to be launched in the terminal. 
 
-L'option de lancement `--map` causera l'affichage du réseau de métro parisien, il sera posssible de cliquer sur les arrets pour obtenir les infos des stations.
+The `--gui` launch option will launch the graphical interface. 
+
+The `-map` launch option will display the Paris metro network, so you can click on the stops to get station information.
+
+
 
